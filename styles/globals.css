@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* DARK MODE
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -15,13 +16,35 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+*/
+html{
 
+  scroll-behavior: smooth;
+}
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: white;
+  background: #1d1d1d;
+  font-size: 16px;
+}
+
+#__next {
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+
+/* Hero height */
+.hero-height {
+  min-height: calc(100vh - 88px);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
